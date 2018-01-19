@@ -1,1 +1,39 @@
-
+{
+    "name": "frame-php/frame-php",
+    "type": "project",
+    "license": "MIT",
+    "description": "Main FramePHP application",
+    "authors": [
+        {
+            "name": "Hilkiah Makemo",
+            "email": "hilkiah.makemo@skywest.com"
+        }
+    ],
+    "require-dev": {
+    },
+    "require": {
+      "frame-php/module-app",
+      "frame-php/module-sys",
+      "frame-php/application",
+    },
+    "autoload": {
+        "psr-4": {
+            "FramePHP\\" : "src/"
+        }
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "frame project"
+        ],
+        "post-install-cmd": [
+            "frame install"
+        ],
+        "post-update-cmd": [
+            "frame update"
+        ]
+    },
+    "bin": [
+        "bin/frame"
+    ],
+    "minimum-stability": "dev"
+}
