@@ -23,17 +23,14 @@
     },
     "scripts": {
         "post-create-project-cmd": [
-            "frame project"
+            
         ],
         "post-install-cmd": [
-            "frame install"
+            
         ],
         "post-update-cmd": [
-            "frame update"
+            
         ]
     },
-    "bin": [
-        "bin/frame"
-    ],
     "minimum-stability": "dev"
 }
